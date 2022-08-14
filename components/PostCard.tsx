@@ -8,7 +8,7 @@ interface Props {
 
 function PostCard({ post }: Props) {
     return (
-        <Link key={post._id} href={`/post/${post.slug.current}`}>
+        <Link href={`/post/${post.slug.current}`}>
             <div className="border rounded-lg group cursor-pointer overflow-hidden">
                 <img
                     className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
